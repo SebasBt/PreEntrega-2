@@ -3,7 +3,9 @@
     padding: 0%;
     box-sizing: border-box; }
 
-
+body{
+    background-color:  rgba(209, 148, 68, 0.623);;
+}
  /* HEADER */
 header{
     display: flex;
@@ -86,206 +88,79 @@ footer .container span{
     color: #efefef;
     font-size: 80px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   
-    
-    
 }
-/* AQUI VA UN SECTION DE INDEX */
-#section-1{
-    height: 500px;
-    position: relative;
-    top: 100px;
-}
-
-#section-1 .divSection-1{
-    width: 100%;
-    height: 400px;
-   
-    
-}
-#section-1 .divSection-1 div {
-  
-    width: 32%;
-    height: 200px;
-    padding-left: 50px ;
-    padding-right: 50px;
-    
-    display: inline-block;
-    position: relative;
-    left: 15px;
-    
-    
-    
-
-}
-#section-1 .divSection-1 div h3 {
-    text-align: center;
-    font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-#section-1 .divSection-1 div p{
-    font-size: 20px ;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgba(99, 95, 95, 0.833);
-}
-
-
-#articlpePrincipal{
-    position: relative;
-    top: 100px;
-}
-#articlePrincipal div{
-    width: 100%;
-    height: 600px;
-}
-#articlePrincipal img{
-    width: 100%;
-    height: 600px;
-    position: relative;
-    bottom: 10px;
-    
-}
-#articlePrincipal .spanTecnicos{
-    text-align: center;
-    position: relative;
-    left: 30%;
-    z-index: 2;
-    bottom: 600px;
-    color: #a54d28ef;
-    font-size: 50px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
- }
-.btnContactanos{
-    
-    width: 100%;
-    height: 50px;
-    position: relative;
-    bottom: 500px;
-}
-
-.btnContactanos .btnContactanos-1{
-    width: 100%;
-    text-decoration: none;
-    
-}
-.btnContactanos .btnContactanos-1 .spanContactanos{
-    position: relative;
-    left: 42%;
-    top: 90px;
-    width: 800px;
-    height: 50px;
-    border: solid 2px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top:  20px; ;
-    padding-bottom: 20px;
-    font-size: 30px;
-    color: #a54d28ef;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
-}
-
-
-
-
-
-
-
-
-
 
 /* CONTACTO */
-
- #form{
-    height: 1000px;
- }
-#fieldset{
-    position: relative;
-    top: 200px;
-    border: none;
-    height: 700px;
+.container-form{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+}
+.container-form h2{
+    margin-bottom: 15px;
+    font-size: 35px
+}
+.container-form p{
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.container-form a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
+}
+.container-form a:hover{
+    color: white;
+}
+.container-form a i{
+    color: orange;
+    margin-right: 10px;
+}
+.container-form form .campo, textarea{
     width: 50%;
-    left: 25%;
+    padding: 15px 10px;
+    font-size: 16px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
 }
-#fieldset h1{
-    text-align: center;
-    font-family: monospace;
+.container-form form .campo {
+    width: 100%;    
 }
-#nombre{
-    position: relative;
-    left: 23%;
-    width: 500px;
-    height: 50px;
-    margin: 10px;
-    
-
+.container-form form textarea{
+    width: 100%;
+    height: 150px;
 }
-#apellido{
-    position: relative;
-    left: 23%;
-    width: 500px;
-    height: 50px;
-    margin: 10px;
-    
+.container-form .btn-enviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: orange;
+    color: black;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    margin-bottom: 50px;
 }
-#telefono{
-    position: relative;
-    left: 23%;
-    width: 500px;
-    height: 40px;
-    margin: 10px;
-}
-#gmail{
-    position: relative;
-   left: 23%;
-   width: 500px;
-    height: 50px;
-    margin: 10px;
-}
-#repetirGmail{
-    position: relative;
-    left: 23%;
-    width: 500px;
-    height: 50px;
-    margin: 10px;
+.container-form .btn-enviar:hover{
+    background: #ffffff;
 }
 
-#mensaje{
-    position: relative;
-    left: 23%;
-    width: 500px;
-    margin: 10px;
-}
-
-#form .campoObligatorio{
-    text-align: center;
-    font-size: 20px;
-}
-#condiciones{
-    position: relative;
-    left: 25%;
-    display: inline;
-    width: 200px;
-}
-#terycond{
-    height: 30px;
-    width: 30px;
-}
-.parrafoTerminos{
-    display: inline;
-
-}
-
-#enviarConsulta{
-    position: relative;
-    text-align: center;
-}
-#enviarConsulta input{
-    width: 500px;
-    height: 35px;
-    margin-top: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+@media (max-width:790px){
+    .container-form .campo{
+        min-width: auto;
+    }
 }
 
 /* SOBRE NOSOTROS */ 
