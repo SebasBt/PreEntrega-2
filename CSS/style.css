@@ -4,133 +4,63 @@
     box-sizing: border-box; }
 
 
-    /* HEADER */
-#header{
-    width: 100%;
-   
-   position: fixed;
-   z-index: 100;
-   background-color: rgb(6, 34, 34);
-
-}
-#header .tituloHeader{
-    position: relative;
-    bottom: 50px;
-    
-}
-#header .tituloHeader h1{
-    text-align: center;
-   color: #efefef;
-   position: relative;
-   bottom: 20px;
-
-    
-    
-
-}
-#header .tituloHeader span{
-    position: relative;
-    left: 45%;
-    font-size: 20px;
-    color: #fff;
-    bottom: 20px;
-}
-#header .logoHeader{
-    
-    width: 50%;
-   
-    
-}
-#header .logoHeader .imgLogo{
-    width: 90px;
-    position: relative;
-    top: 10px;
-
-    
-}
-
-#header .menu{
-    padding: 20px;
-    text-align: center;
-    background-color: rgb(6, 34, 34);
-    position:fixed;
-    width: 100%;
-    top: 100px;
+ /* HEADER */
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: rgba(255, 127, 80, 0.452);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
     
     
     
 }
 
-#header .menu ul li{
-    margin: 40px;
-    font-size: 20px;
-    display: inline;
-    
-}
-#header .menu ul li .btnMenu{
-     text-decoration: none;
-     padding: 15px;
-     
-     margin: 20px;
-     color: #fff;
-}
-#header .menu ul li .btnMenu:hover{
+header .logo{
+    display: flex;
+    align-items: center;
     text-decoration: none;
-   
-    border-color: rgba(255, 255, 255, 0.162) ;
-    border: solid 1px;
+}
+header .nombre-empresa{
+    color: black;
 }
 
- /* AQUI EMPIEZA EL FOOTER */
- #footer{
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+nav .link{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding-right: 10px ;
+}
+nav .link:hover{
+    color: white;
+}
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+
+    }
+}
+
+.conteiner img{
     width: 100%;
-    background-color: rgb(6, 34, 34);
-    position: absolute;
-    bottom: auto;
-}
-#footer .grupo-1{
-width: 100%;
-max-width: 1200px;
-margin: auto;
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-gap: 50px;
-padding: 45px 0px;
+ }
 
+ /* FOOTER */
+footer{
+    background-color: coral;
 }
-
-#footer .grupo-1 .box figure {
-    width: 100%;
-    height: 100%;
+footer .container span{
     display: flex;
     justify-content: center;
     align-items: center;
-    
-
-}
-#footer.grupo-1 .box figure img{
-    width: 50px;
-    
-}
-#footer .grupo-1 .box h2{
-    color: #fff;
-    margin-bottom: 25px;
-    font-size: 20px;
-}
-#footer .grupo-1 .box p{
-    color: #efefef;
-    margin-bottom: 10px;
-}
-
-#footer .grupo-2 {
-    background-color: black;
-    padding: 15px 10px;
-    text-align: center;
-    color: #fff;
-
-}
-#footer .grupo-2 small{
-    font-size: 15px;
 }
 
 
